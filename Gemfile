@@ -10,12 +10,15 @@ gem 'bcrypt-ruby'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'pry-rails'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 # Use SCSS for stylesheets
